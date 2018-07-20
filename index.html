@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Round Robin Scheduling Algorithm</title>
+</head>
+<body style="text-align: center">
+	<h1>Round Robin Scheduling Algorithm</h1>
+	<h4>By: Zayed Alabbad</h4>
+	<hr>
+	<h3>First: Choose Time Quantum:</h3>
+	<p>Time Quantum(q) =
+		<select id="q">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+		</select>
+	</p>
+	<hr>
+	<h3>Second: Choose Processes Arrival Times and Brust Times:</h3>
+	<h5>"You can change the default values"</h5>
+	<p><b>Process #1 :</b>Arrival Time = <input class="AT" value="5" id="black"> - Brust Time = <input class="BT" value="5"></p>
+	<p><b>Process #2 :</b> Arrival Time = <input class="AT" value="4" id="green"> - Brust Time = <input class="BT" value="6"></p>
+	<p><b>Process #3 :</b> Arrival Time = <input class="AT" value="3" id="cyan"> - Brust Time = <input class="BT" value="7"></p>
+	<p><b>Process #4 :</b> Arrival Time = <input class="AT" value="1" id="blue"> - Brust Time = <input class="BT" value="9"></p>
+	<p><b>Process #5 :</b> Arrival Time = <input class="AT" value="2" id="pink"> - Brust Time = <input class="BT" value="2"></p>
+	<p><b>Process #6 :</b> Arrival Time = <input class="AT" value="6" id="gray"> - Brust Time = <input class="BT" value="3"></p>
+	<hr>
+	<h3>Third: Press Run to run the algorithm:</h3>
+	<h5>"Refresh the page to restart the algorithm"</h5>
+	<button id="run" style="font-size: 20px">Run</button>
+	<br><br>
+	<canvas id="RR" height="400px" width="1200px" style="border: 1px solid black"></canvas>
+	
+	<script src="RoundRobin.js"></script>
+</body>
+</html>
